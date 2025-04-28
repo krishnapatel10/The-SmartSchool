@@ -19,7 +19,7 @@ app.use(cors());
 app.use(bodyparser.json());
 
 mongoose.connect(process.env.MONGODB_URI).then(() => {
-    console.log("Mongodb connected..")})
+    console.log("MongoDB connected..")})
     .catch((err) => console.log(err));;
 
 
